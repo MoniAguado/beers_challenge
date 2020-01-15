@@ -20,18 +20,22 @@ class NavBar extends Component {
             <div className={classes.navbar}>
                 <AppBar position="static" classname={classes.AppBar}>
                     <Toolbar>
-                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                        <MenuIcon />
-                    </IconButton>
-                    <Typography variant="h6" className={classes.title}>
-                        <Link to="/beers">Beers</Link>
-                    </Typography>
-                    <Typography variant="h6" className={classes.title}>
-                        <Link to="/random-beers">RandomBeers</Link>
-                    </Typography>
-                    <Typography variant="h6" className={classes.title}>
-                        <Link to="/">Home</Link>
-                    </Typography>
+                        <div>
+                            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+                                <MenuIcon />
+                            </IconButton>
+                        </div>
+                    <div className={classes.links}>
+                        <Typography variant="h6" className={classes.title}>
+                            <Link to="/beers" className={classes.tittleText}>Beers</Link>
+                        </Typography>
+                        <Typography variant="h6" className={classes.title}>
+                            <Link to="/random-beers" className={classes.tittleText}>RandomBeers</Link>
+                        </Typography>
+                        <Typography variant="h6" className={classes.title}>
+                            <Link to="/" className={classes.tittleText}>Home</Link>
+                        </Typography>
+                    </div>
                     </Toolbar>
                 </AppBar>
             </div>
@@ -47,6 +51,8 @@ NavBar.propTypes = {
       AppBar: PropTypes.string.isRequired,
       menuButton: PropTypes.string.isRequired,
       tittle: PropTypes.string.isRequired,
+      links: PropTypes.string.isRequired,
+      tittleText: PropTypes.string.isRequired,
     }).isRequired,
   
   }

@@ -1,15 +1,24 @@
-import { grey } from "@material-ui/core/colors"
 
 const styles = () => ({
     
     footer: {
         display: 'flex',
         flexDirection: 'column',
+        width: '100%',
+        margin: '0',
     },
     footerContainer: {
-      backgroundColor: grey,
-      height: '20px',
+      backgroundColor: 'black',
+      height: '60px',
       marginTop: 'auto',
+      color: 'white',
+      width: '100%',
+      margin: '0',
+      maxWidth: '100%',
+    },
+    text: {
+      justifyContent: 'center',
+      padding: '20px',
     }
 
   })

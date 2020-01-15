@@ -1,4 +1,4 @@
-// import { pink } from "@material-ui/core/colors"
+
 
 const styles = () => ({
     
@@ -9,9 +9,17 @@ const styles = () => ({
         flexGrow: 1,
       },
       navbar: {
-        backgroundColor: 'pink',
-        marginTop: '100px',
-        border: 'solid 3px red',
+        textDecoration: 'none',
+        
+      },
+      links: {
+        display: 'flex',
+        flexDirection: 'row',
+      },
+      tittleText: {
+        marginLeft: '30px',
+        textDecoration: 'none',
+        color: 'white',
       }
    
 
